@@ -8,19 +8,23 @@
   margin: 0 auto;
 }
 #header {
-  height: 100px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   position: fixed;
   top: 30px;
-  color: white;
   z-index: 10;
+  color: white;
   font-weight: 600;
   font-family: "Inter", sans-serif;
-  padding: 0px 118px;
-  unicode-
 }
+
+.header-child {
+  display: flex;
+  justify-content: space-between;
+  width: 1204px;
+  margin: 0 auto;
+  padding: 0px 118px;
+}
+
 .logo1 {
   width: 100px;
   height: 34px;
@@ -37,6 +41,22 @@
 }
 .en {
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  position: absolute;
+  top: 6px;
+}
+
+.enborder {
+  border-radius: 9999px;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 img {
   width: 100px;
@@ -87,24 +107,7 @@ img {
   background-image: url(./Frame.png);
   align-content: center;
 }
-.terhiin-tsagaan {
-  width: 275.49px;
-  height: 370px;
-  border-radius: 40px;
-  object-fit: cover;
-  background-image: url(./hover\ card\ 3.1.png);
-  background-position: center;
-  background-size: cover;
-  font-size: 37px;
-  padding: 10px;
-  font-family: "Bebas Neue", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
-    -8px -8px rgba(31, 114, 170, 0.46);
-  text-align: center;
-}
+
 #location1 {
   font-size: 37px;
   text-align: center;
@@ -126,6 +129,52 @@ img {
   width: 232px;
 }
 
+.layer-b {
+  width: inherit;
+  height: 100%;
+  border-radius: 40px;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+}
+
+.terhiin-tsagaan:hover .layer-b {
+  opacity: 0.4;
+}
+.AMARBAYASGALANT:hover .layer-b {
+  opacity: 0.4;
+}
+.KHUVSGUL:hover .layer-b {
+  opacity: 0.4;
+}
+.KHORGIIN:hover .layer-b {
+  opacity: 0.4;
+}
+.terhiin-tsagaan:hover .z-index {
+  opacity: 0.4;
+}
+
+.terhiin-tsagaan {
+  width: 275.49px;
+  height: 370px;
+  border-radius: 40px;
+  object-fit: cover;
+  gap: 10px;
+  background-image: url(./hover\ card\ 3.1.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 37px;
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
+    -8px -8px rgba(31, 114, 170, 0.46);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
 .AMARBAYASGALANT {
   width: 275.49px;
   height: 370px;
@@ -142,6 +191,7 @@ img {
   align-items: center;
   box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
     -8px -8px rgba(31, 114, 170, 0.46);
+  position: relative;
 }
 .KHUVSGUL {
   width: 275.49px;
@@ -158,6 +208,7 @@ img {
   align-items: center;
   box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
     -8px -8px rgba(31, 114, 170, 0.46);
+  position: relative;
 }
 .KHORGIIN {
   width: 275.49px;
@@ -174,9 +225,10 @@ img {
   align-items: center;
   box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
     -8px -8px rgba(31, 114, 170, 0.46);
+  position: relative;
 }
 .scroll3 {
-  width: 1440px;
+  width: 100%;
   height: 1022px;
   background-image: url(./Roudmap\ container.png);
   background-position: center;
@@ -184,7 +236,7 @@ img {
   object-fit: cover;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 .scroll3title {
   height: 204px;
@@ -194,21 +246,21 @@ img {
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
+  row-gap: 10px;
+  padding-top: 10px;
 }
-.scroll3 h2{
-font-size: 42px;
-font-weight: 600;
-
+.scroll3 h2 {
+  font-size: 42px;
+  font-weight: 600;
 }
-.scroll3 h4{
-font-size: 20px;
-font-weight: 500;
-color: rgba(24, 24, 27, 0.7);
+.scroll3 h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(24, 24, 27, 0.7);
 }
 img {
   width: 14px;
   height: 14px;
-  float: left;
 }
 
 .pin {
@@ -229,9 +281,9 @@ h4 {
 .info h3 {
   font-size: 24px;
   font-weight: 500;
-  width: 217px;
-  height: 29px;
   font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
 }
 
 .info p {
@@ -241,7 +293,11 @@ h4 {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
-
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .day {
   background-color: white;
@@ -254,6 +310,7 @@ h4 {
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 #dayboxs {
   width: 513px;
   height: 640px;
@@ -263,35 +320,117 @@ h4 {
   flex-direction: column;
   gap: 20px;
 }
-
-.day-box1-1{
+.boxinside {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  height: 120px;
-  width: 513px;
+  column-gap: 12px;
 }
 .day-box1 {
   background-color: rgba(238, 233, 217, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 120px;
+  border-radius: 9999px;
   width: 513px;
-  height: 112px;
-  
+  padding: 30px;
+}
+
+.day-box1:hover {
+  border: 4px solid white;
+}
+.day-box2:hover {
+  border: 4px solid white;
+}
+.day-box3:hover {
+  border: 4px solid white;
+}
+.day-box4:hover {
+  border: 4px solid white;
+}
+.day-box5:hover {
+  border: 4px solid white;
+}
+
+.pinpink {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+}
+
+.pinsuh {
+  left: 832px;
+  top: 60px;
+}
+
+.pinamar {
+  top: 164px;
+  left: 660px;
+}
+
+.pinkhor {
+  top: 181px;
+  left: 1045px;
+}
+.pinterk {
+  top: 150px;
+  left: 660px;
+}
+
+.pictures {
+  width: 245px;
+  height: 245px;
+  position: absolute;
+  display: none;
+}
+
+.Sukhpic {
+  top: 62px;
+  left: 912px;
+}
+
+.Amarpic {
+  top: -72px;
+  left: 760px;
+}
+
+.Khorpic {
+  top: 50px;
+  left: 583px;
+}
+
+.Nuurpic {
+  top: 150px;
+  left: 660px;
+}
+
+.Khuvspic {
+  top: -130px;
+  left: 560px;
+}
+
+.day-box1:hover ~ .Sukhpic {
+  display: block;
+}
+
+.day-box2:hover ~ .Amarpic {
+  display: block;
+}
+.day-box3:hover ~ .Khorpic {
+  display: block;
+}
+.day-box4:hover ~ .Nuurpic {
+  display: block;
+}
+.day-box5:hover ~ .Khuvspic {
+  display: block;
 }
 .day-box2 {
   background-color: rgba(139, 184, 193, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 120px;
+  border-radius: 9999px;
   width: 513px;
-  height: 112px;
-  
+  padding: 30px;
 }
 
 .day-box3 {
@@ -299,40 +438,42 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 120px;
+  border-radius: 9999px;
   width: 513px;
-  height: 112px;
+  padding: 30px;
 }
 .day-box4 {
   background-color: rgba(139, 192, 189, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 120px;
+  border-radius: 9999px;
   width: 513px;
-  height: 112px;
+  padding: 30px;
 }
 .day-box5 {
   background-color: rgba(151, 204, 224, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 120px;
+  border-radius: 9999px;
   width: 513px;
-  height: 112px;
+  padding: 30px;
 }
 
 .scroll4 {
-  width: 100%;
-  height: 1220px;
-  display: flex;
+  width: 1440px;
+  height: 1120px;
   background-image: url(./Price.Footer.png);
   background-position: center;
   background-size: cover;
+  gap: 20px;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .title4 {
   width: 100%;
   height: 85px;
@@ -352,7 +493,7 @@ h4 {
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  color: rgba(24, 24, 27, 0.7)
+  color: rgba(24, 24, 27, 0.7);
 }
 .Budget {
   background-color: white;
@@ -361,6 +502,36 @@ h4 {
   border-radius: 40px;
   display: flex;
   flex-direction: column;
+}
+.popular {
+  width: 91px;
+  height: 27px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(105, 114, 181, 1);
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+  border-radius: 9999px;
+  text-align: center;
+  font-weight: 500;
+}
+.popularlast {
+  display: flex;
+  justify-content: space-between;
+}
+.Budget:hover {
+  width: 384px;
+  height: 527px;
+  box-shadow: 10px 10px rgba(41, 114, 139, 0.25),
+    -10px -10px rgba(31, 114, 170, 0.46);
+}
+.selectpackage:hover {
+  background-color: black;
+  color: white;
+}
+.Budget:hover .selectpackage {
+  color: white;
+  background-color: black;
 }
 #packagecard {
   width: 384px;
@@ -472,4 +643,42 @@ h4 {
   display: flex;
   justify-content: center;
   column-gap: 24px;
+}
+
+.footer {
+  height: 204px;
+  display: flex;
+  background-color: rgba(159, 198, 222, 1);
+  column-gap: 20px;
+  padding: 80px 120px;
+}
+.footericon {
+  width: 1200px;
+  height: 44px;
+}
+.border {
+  display: flex;
+  width: 171px;
+  height: 44px;
+  border-radius: 9999px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 18px;
+}
+.border img {
+  width: 24px;
+  height: 24px;
+}
+.logolast {
+  height: 35px;
+  width: 101px;
+  margin-left: auto;
+}
+
+.footer p {
+  color: rgba(105, 114, 181, 1);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }

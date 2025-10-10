@@ -15,14 +15,16 @@
   </head>
   <body>
     <header id="header">
-      <img src="./Tour Logo.png" class="logo1" />
-      <div class="navi">
-        <div class="home">Home</div>
-        <div class="about">About</div>
-        <div class="contact">Contact</div>
-        <i class="fa-regular fa-user"></i>
+      <div class="header-child">
+        <img src="./Tour Logo.png" class="logo1" />
+        <div class="navi">
+          <div class="home">Home</div>
+          <div class="about">About</div>
+          <div class="contact">Contact</div>
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <div class="enborder"><div class="en">EN</div></div>
       </div>
-      <div class="en">EN</div>
     </header>
     <div class="layout">
       <div class="scroll1">
@@ -33,15 +35,19 @@
       <div class="scroll2">
         <div class="terhiin-tsagaan">
           <h5 id="location1">TERKHIIN TSAGAAN LAKE</h5>
+          <div class="layer-b"></div>
         </div>
-        <div class="AMARBAYASGALANT">
+        <div class="AMARBAYASGALANT" class="lasthover">
           <h5 id="location2">AMARBAYASGALANT MONASTERY</h5>
+          <div class="layer-b"></div>
         </div>
-        <div class="KHUVSGUL">
+        <div class="KHUVSGUL" class="lasthover">
           <h5 id="location3">KHUVSGUL LAKE</h5>
+          <div class="layer-b"></div>
         </div>
-        <div class="KHORGIIN">
+        <div class="KHORGIIN" class="lasthover">
           <h5 id="location4">KHORGIIN TOGOO</h5>
+          <div class="layer-b"></div>
         </div>
       </div>
       <div class="scroll3">
@@ -50,50 +56,72 @@
           <h4>Pack Your Bags And Get Ready</h4>
         </div>
         <div id="dayboxs">
-            <div class="day-box1">
-              <div class="day-box1-1">
-              <div class="info">
-                <h3>Suhkbaatar square</h3>
+          <div class="day-box1">
+            <div class="info">
+              <h3 class="Sukhtext">Suhkbaatar square</h3>
+              <div class="boxinside">
                 <img src="./pin black.png" class="pin" />
                 <p>Ulaanbator</p>
               </div>
-              <div class="day">Day1</div>
-              </div>
             </div>
-            <div class="day-box2">
-              <div class="info">
-                <h3>Amarbaysgalant monastery</h3>
+            <div class="day">Day1</div>
+          </div>
+          <div class="day-box2">
+            <div class="info">
+              <h3>Amarbaysgalant monastery</h3>
+              <div class="boxinside">
                 <img src="./pin black.png" class="pin" />
                 <p>Bulgan</p>
               </div>
-              <div class="day">Day2</div>
             </div>
-            <div class="day-box3">
-              <div class="info">
-                <h3>Khorgiin togoo</h3>
+            <div class="day">Day2</div>
+          </div>
+          <div class="day-box3">
+            <div class="info">
+              <h3>Khorgiin togoo</h3>
+              <div class="boxinside">
                 <img src="./pin black.png" class="pin" />
                 <p>Arkhangai</p>
               </div>
-              <div class="day">Day3</div>
             </div>
-            <div class="day-box4">
-              <div class="info">
-                <h3>Terkhiin tsagaan lake</h3>
+            <div class="day">Day3</div>
+          </div>
+          <div class="day-box4">
+            <div class="info">
+              <h3>Terkhiin tsagaan lake</h3>
+              <div class="boxinside">
                 <img src="./pin black.png" alt="" />
                 <p>Arkhangai</p>
               </div>
-              <div class="day">Day4</div>
             </div>
-            <div class="day-box5">
-              <div class="info">
-                <h3>Khuvsgul lake</h3>
+            <div class="day">Day4</div>
+          </div>
+          <div class="day-box5">
+            <div class="info">
+              <h3>Khuvsgul lake</h3>
+              <div class="boxinside">
                 <img src="./pin black.png" alt="" />
                 <p>Khuvsgul</p>
               </div>
-              <div class="day">Day5</div>
             </div>
-          
-      
+            <div class="day">Day5</div>
+          </div>
+
+          <img class="pictures Sukhpic" src="./Sukhbaatarpin.png" />
+          <img class="pictures Amarpic" src="./Amarbaysgalanpin.png" />
+          <img class="pictures Khorpic" src="./Khorgiintogoopin.png" alt="" />
+          <img class="pictures Nuurpic" src="./Nuurpin.png" />
+          <img class="pictures Khuvspic" src="./Khuvsgulpin.png" alt="" />
+
+          <div class="hoverd">
+            <div class="pins">
+              <img class="pinpink pinsuh" src="pin purple.png" />
+              <img class="pinpink pinamar" src="pin purple.png" />
+              <img class="pinpink pinkhor" src="pin purple.png" />
+              <img class="pinpink pinterk" src="pin purple.png" />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="scroll4">
         <div class="title4">
@@ -136,7 +164,10 @@
                 </div>
               </div>
               <div>
-                <div class="selectpackage">Select package</div>
+                <div class="selectpackage">
+                  Select package
+                  <div class="selecthover"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -148,7 +179,9 @@
             <div id="budgetline">
               <div class="price">
                 <p>800$</p>
-                <p class="small">Balanced Adventure</p>
+                <div class="popularlast"><p class="small">Balanced Adventure
+                  <div class="popular">Popular</div>
+                </p></div>
               </div>
 
               <div class="checkboxs">
@@ -211,6 +244,17 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="footer">
+        <div class="border">
+          <img src="./facebook icon.png" alt="" />
+          <p>Facebook</p>
+        </div>
+        <div class="border">
+          <img src="./instagram icon.png" alt="" />
+          <p>Instagram</p>
+        </div>
+        <img src="./Tour Logo.png" class="logolast" />
       </div>
     </div>
   </body>
