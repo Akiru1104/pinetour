@@ -20,8 +20,8 @@
 .header-child {
   display: flex;
   justify-content: space-between;
+  margin: auto;
   width: 1204px;
-  margin: 0 auto;
   padding: 0px 118px;
 }
 
@@ -236,7 +236,7 @@ img {
   object-fit: cover;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
 }
 .scroll3title {
   height: 204px;
@@ -371,8 +371,8 @@ h4 {
   left: 1045px;
 }
 .pinterk {
-  top: 150px;
-  left: 660px;
+  top: 250px;
+  left: 760px;
 }
 
 .pictures {
@@ -504,16 +504,17 @@ h4 {
   flex-direction: column;
 }
 .popular {
-  width: 91px;
+  width: 100px;
   height: 27px;
   font-size: 16px;
   color: white;
   background-color: rgba(105, 114, 181, 1);
-  gap: 10px;
   font-family: "Inter", sans-serif;
-  border-radius: 9999px;
-  text-align: center;
+  border-radius: 999px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .popularlast {
   display: flex;
