@@ -68,6 +68,7 @@ img {
   justify-content: space-between;
   height: 22px;
   width: 392px;
+  padding-right: 100px;
 }
 .scroll1 {
   height: 773px;
@@ -625,6 +626,7 @@ h4 {
   gap: 10px;
   padding-right: 40px;
   padding-left: 40px;
+  font-family: "Inter", sans-serif;
 }
 .selectpackage {
   font-size: 16px;
